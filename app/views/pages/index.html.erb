@@ -1,8 +1,4 @@
 <h1>Mel's Portfolio</h1>
 
-<h2>Link to projects:</h2>
-<ul>
-  <% @projects.each do |project| %>
-    <li><%= link_to project.name, project_path(project) %></li>
-  <% end %>
-</ul>
+<%= link_to "All Projects", projects_index_path %>
+

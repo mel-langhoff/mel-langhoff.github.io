@@ -1,0 +1,10 @@
+<h1>@project.name</h1>
+
+<ul>
+  <li>Project description: <%= @project.description %></li>
+  <li><% link_to "GitHub Repository", @project.repository_link %></li>
+  <li>See it in action! <%= @project.local_link %>
+  <% if @project.local_link.present? %>
+    <li><%= "See the project", project_path(@project) %></li>
+  <% end %>
+</ul>
